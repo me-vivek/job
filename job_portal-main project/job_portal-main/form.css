@@ -1,0 +1,82 @@
+:root{
+    --blue: #400080;
+    --text: #ccc;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* a {
+    color: var(--blue);
+    text-decoration: none;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, var(--text), #6b6bff);
+}
+.form-container{
+    border: 1px solid var(--blue);
+    width: 50%;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: rgb(230, 230, 230);
+    /* backdrop-filter: blur(10px); */
+    box-shadow: 5px 8px 20px 1px var(--blue);
+}
+.div50{
+    width: 50%;
+}
+
+.form-container .toggle-panel{
+    background-color: var(--blue);
+    color: var(--text);
+    height: 350px;
+    border-radius: 24px;
+}
+.form-container form{
+    color: var(--blue);
+}
+.form-container :is(form, .toggle-panel){
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+.form-container :is(h1, p, div){ 
+    text-align: center;
+}
+.form-container button{
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.form-container form button{
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: var(--text);
+}
+.form-container .toggle-panel button{
+    border: 1px solid var(--text);
+    background-color: var(--blue);
+    color: var(--text);
+}
+.form-container form input{
+    width: 300px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--text);
+    background-color: var(--text);
+}
+#sign-in{
+    display: none;
+} */

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="flex-center container " id="container">
+        <div id="sign-up" class="form-container flex-center">
+            <div class="div50 toggle-panel">
+                <div>
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your Personal Details to use all the site features</p>
+                    <div class="flex-center">
+                        <button class="hidden" id="Login">Sign In</button>
+                    </div>
+                </div>
+            </div>
+            <form class="div50">
+                <h1>Create Account</h1>
+                <!-- <div class="social-icons">
+                    <a href="#" class="icon">Google<i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon">Facebook<i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="icon">Github<i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon">Linkedin<i class="fa-brands fa-Linkedin"></i></a>
+                </div> -->
+                <div>Use your email for registration</div>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <div class="flex-center">
+                    <button>Sign Up</button>
+                </div>
+            </form>
+        </div>
+        <div id="sign-in" class="form-container flex-center">
+            
+            <form class="div50">
+                <h1>Sign In</h1>
+                <!-- <div class="social-icons">
+                    <a href="#" class="icon">Google<i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon">Facebook<i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="icon">Github<i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon">Linkedin<i class="fa-brands fa-Linkedin"></i></a>
+                </div> -->
+                <div>Enter your credentials</div>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <div class="flex-center">
+                    <a href="#">Forget Password ?</a>
+                </div>
+                <div class="flex-center">
+                    <button>Sign In</button>
+                </div>
+            </form>
+            <div class="div50 toggle-panel">
+                <div>
+                    <h1>Hello Friend!</h1>
+                    <p>Register with your Personal Details to use all the site features</p>
+                    <div class="flex-center">
+                        <button class="hidden" id="Register">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const signin = document.getElementById('sign-in');
+    const signup = document.getElementById('sign-up');
+
+    const registerBtn = document.getElementById('Register');
+    const loginBtn = document.getElementById('Login');
+
+    registerBtn.addEventListener('click', () => {
+        signin.style.display = "none";
+        signup.style.display = "flex";
+    });
+
+    loginBtn.addEventListener('click', () => {
+        signin.style.display = "flex";
+        signup.style.display = "none";
+    });
+</script>
+</html>
